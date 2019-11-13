@@ -3,13 +3,20 @@
   href="https://fonts.googleapis.com/css?family=Dosis|Homemade+Apple&display=swap"
   rel="stylesheet"
 />
-<app-post-form [hidden]="!formVisible"></app-post-form>
+<app-post-form
+  [hidden]="!formVisible"
+  (submitted)="onSubmit($event)"
+></app-post-form>
 <div class="holder">
   <h1>My Thoughts</h1>
   <a href="#" class="thoughtButton" (click)="formVisible = !formVisible"
     >New Thought</a
   >
   <section class="postZone">
-    <app-post *ngFor="let post of posts" [post]="post"></app-post>
+    <app-post
+      *ngFor="let post of posts; index as i"
+      [post]="post"
+      (deleted)="onDelete(i)"
+    ></app-post>
   </section>
 </div>

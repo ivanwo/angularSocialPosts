@@ -27,7 +27,7 @@ textarea {
   min-height: 75px;
 }
 .overlay {
-  pointer-events: none;
+  /* pointer-events: none; */
   top: 0;
   left: 0;
   right: 0;
