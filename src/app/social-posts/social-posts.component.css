@@ -1,0 +1,32 @@
+.postZone {
+  background-color: white;
+  width: 475px;
+  margin: 1em auto;
+  padding: 1em;
+  border: 1.5px solid black;
+  font-family: "Dosis", sans-serif;
+  border-radius: 5px;
+}
+.thoughtButton {
+  background-color: white;
+  font-family: "Dosis", sans-serif;
+  border: 1.5px solid black;
+  width: 507px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.25em 0;
+  border-radius: 5px;
+  margin: auto;
+  color: black;
+}
+.holder {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  color: rgb(3, 169, 244);
+  font-family: "Homemade Apple", cursive;
+}

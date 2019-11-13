@@ -1,0 +1,15 @@
+<!-- <p>social-posts works!</p> -->
+<link
+  href="https://fonts.googleapis.com/css?family=Dosis|Homemade+Apple&display=swap"
+  rel="stylesheet"
+/>
+<app-post-form [hidden]="!formVisible"></app-post-form>
+<div class="holder">
+  <h1>My Thoughts</h1>
+  <a href="#" class="thoughtButton" (click)="formVisible = !formVisible"
+    >New Thought</a
+  >
+  <section class="postZone">
+    <app-post *ngFor="let post of posts" [post]="post"></app-post>
+  </section>
+</div>

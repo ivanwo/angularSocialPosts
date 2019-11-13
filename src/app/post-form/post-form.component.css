@@ -1,0 +1,40 @@
+form {
+  position: absolute;
+  display: flex;
+  font-family: "Dosis", sans-serif;
+  flex-direction: column;
+  border-radius: 3px;
+  background-color: #b1ddea;
+  padding: 1em;
+  width: 50%;
+  top: 15%;
+  left: 25%;
+}
+label {
+}
+input,
+textarea {
+  padding: 0.5em;
+  margin: 0.25em 0;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: white;
+}
+.submit {
+  cursor: pointer;
+}
+#thought {
+  min-height: 75px;
+}
+.overlay {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+  opacity: 0.5;
+}
